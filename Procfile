@@ -1,0 +1,1 @@
+web: gununicorn cv.wsgi --log-file -
