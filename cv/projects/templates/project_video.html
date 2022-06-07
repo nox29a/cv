@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+        <nav id="navbar" class="nav-menu navbar">
+            {% block page_content %}
+            <nav id="navbar" class="nav-menu navbar">
+            <ul>
+          <li><a href="{% url 'base' %}" class=""><i class="bx bx-home"></i> <span>Home</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+ <section id="gallery" class="gallery section-bg">
+
+
+
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="text-center">
+        <h1>Video projects</h1>
+        <p>Actually, it's a lot more of my video practice, but it's not uploaded yet. It was always a lot of fun to make some videos</p>
+
+    </div>
+        <div class="section">
+          <div class="col-12" >
+              <h3>Videos from my Youtube account:</h3>
+              <p>And it's really old</p>
+          </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ehKnXVR1ywI" allowfullscreen></iframe>
+                </div>
+
+          <div class="col-6" >
+
+                <h3>Videos from my Vimeo account:</h3>
+          </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/404296988?h=ea51e71a26" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/401111307?h=eef72a0cc6" allowfullscreen></iframe>
+                </div>
+
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
+
