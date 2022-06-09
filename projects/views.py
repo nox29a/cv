@@ -22,7 +22,7 @@ def contact_view(request):
     return render(request, 'contact.html', context)
 
 def project_gallery(request):
-    gallery = Gallery.objects.order_by('years')
+    gallery = Gallery.objects.order_by('-years')
     context = {"projects": (gallery)}
     return render(request, "project_gallery.html", context)
 
